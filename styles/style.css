@@ -1,0 +1,265 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+*::selection{
+background: white;
+color: #000;
+}
+/*Barra de navegación */
+header{
+    z-index: 10;
+    position: fixed;
+    height: 13vh;  
+    display: flex;
+    width: 100vw;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    transition: 0.7s;
+}
+header.abajo{
+    background: #000;
+    height:10vh;
+}
+header.abajo .logo, 
+header.abajo ul li a{
+    color: #fff;
+}
+.logo-empresa{
+    padding: 30px;
+    width: 22%;
+    transition: 1.5s;
+    position: relative;
+}
+.logo-empresa>img{
+width: 100%;
+}
+nav{
+    padding: 30px;
+    width: 50%;
+    height: 100%;
+}
+ul{
+    color: white;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    position: relative;
+    align-items: center;
+}
+nav ul li{
+    list-style: none;
+}
+nav ul li a{
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+    position: relative;
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+/* Fin de barra de navegación */
+
+/* Inicio de css Index */
+#inicio{
+    height: 100vh;
+    width: 100%;
+    background-image: url(../images/fondos.jpg);
+    background-repeat: none;
+    background-size: cover;
+    display: grid;
+    place-items: center;
+    position: relative;
+}
+#info{
+    z-index:1;
+    width: 80%;
+    height: 40%;
+    font-family: Georgia, serif;
+
+}
+#info>h1{
+    z-index: 1;
+    color: white;
+    text-align: center;
+    margin: auto;
+    padding-bottom: 40px;
+    font-size: 50px;
+}
+#info>p{
+    z-index:1;
+    color:white;
+    width:450px;
+    text-align: justify;
+    margin: auto;
+    font-size:20px;
+    padding-bottom: 20px;
+    
+}
+#conoce{
+    text-decoration: none;
+    color: white;
+    border:outset  white;
+    border-radius: 7px;
+   font-size: 18px;
+   display: flex;
+   align-items: center;
+   justify-content:center;
+   padding: 18px;
+
+}
+#inicio:before {
+    content:'';
+	position: absolute;
+    top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	background-color: rgba(0,0,0,0.4);
+}
+/* Fin de css Index */
+
+
+/* Inicio de css ACERCA-DE */
+#acerca-de{
+    width: 100%;
+    height: 90vh;
+    background-color: black;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.title-carousel{
+    font-size: 25px;
+    text-shadow:  1px 1px 2px black;
+}
+.text-carousel{
+    font-size: 20px;
+    text-shadow:  1px 1px 2px black;
+}
+
+
+
+
+/* Fin de css ACERCA-DE */
+
+/* Inicio de css DESCARGAR APP */
+#descargar__app{
+    width: 100%;
+    height: 90vh;
+    /* background: #FFF7D4; */
+    color: white;
+}
+
+.container{
+    width: 100%;
+    height: 100%;
+    display: grid;
+    grid-template-columns: repeat(5, 20%);
+    grid-template-rows: repeat(5, 20%);
+    padding: 70px;
+}
+.card{
+    width: 70%;
+    height: 100%;
+    grid-column-start: 1;
+    grid-column-end: 3;
+    grid-row-start: 4;
+    grid-row-end: 1;
+    z-index: 1;
+}
+.info-app{
+    grid-column-start: 2;
+    grid-column-end: 6;
+    grid-row-start: 2;
+    grid-row-end: 6;
+    border-radius: 10px;
+    box-shadow: rgba(0, 0, 0, 0.15) 0px 6px 30px 0px;  
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.txt-info{
+    margin-left: 17%;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+/* Fin de css DESCARGAR APP */
+
+/* inicio de css de OBJETIVO */
+.info-objetivo{
+    background-image: url(../images/fondo-objetivo.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 90vh;
+    grid-template-columns:100% ;
+    grid-template-rows: 45% 12.2% 40%;
+    
+   
+}
+#objspecs{
+    margin-top: 50px;
+    margin: auto;
+    height: 50%;
+    display:grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    column-gap: 30px ;
+}
+/* DIVS TEXTO */
+#objgen{
+    margin-bottom: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url(../images/fondo\,specs-white.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 80%;
+    padding-left: 5px;
+    padding-right: 5px;
+    height: 50%;
+    margin: auto;
+    border-radius: 50px;
+
+    
+    }
+#obj1{
+    border-radius: 50px;
+    margin-left: 50px;
+    background-image: url(../images/fondo-specs.webp);
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#obj2{
+    border-radius: 50px;
+
+    background-image: url(../images/fondo\,specs-white.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#obj3{
+    border-radius: 50px;
+
+    margin-right: 50px;
+    background-image: url(../images/fondo-specs.webp);
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* fin divs texto */
+
